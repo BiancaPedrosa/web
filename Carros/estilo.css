@@ -1,0 +1,24 @@
+
+img {
+	height: 100px;
+    width: 150px;
+ }
+ table, th ,td ,tr{
+	border-width: thin;
+	border-style: solid;
+	border-color: blue;
+	margin: auto;
+}
+body { 
+	background-color: rgb(144, 212, 132); 
+}
+th {
+	background-color: #00f;
+	color: white;
+}
+table{
+	width: 100%;
+}
+td {
+	padding: 20px;
+}

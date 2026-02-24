@@ -1,0 +1,11 @@
+h1 {
+  background-color: #ff6347;
+  color: white;
+  padding:25px;
+  text-align:center
+}
+img {
+   width: 500px;
+   display : block;
+   margin: 0 auto;
+}
