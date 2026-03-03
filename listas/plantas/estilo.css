@@ -1,0 +1,55 @@
+/* seletores de elemento/tag*/
+h1{
+    color: white;
+    background-color: green;
+}
+h2{
+    color: red;
+    border-bottom: solid lightgray;
+}
+/*seletor id*/
+#materiais{
+    color: brown;
+}
+/*seletores de classes*/
+ol.azul{
+    color: blue;
+}
+
+.destaque{
+    background-color: lightblue;
+}
+/* centralizar textos*/
+.center
+{
+    text-align: center;
+}
+/*centralizar imagem*/
+/*display block = exibir uma imagem por linha*/ 
+/*width= largura em px ou %*/
+img{
+    display: block;
+    margin: auto;
+    width: 350px;
+}
+/*centralizar conteúdo página*/ 
+body{
+    margin: auto;
+    width: 50%
+}
+
+ul>li{
+    border: solid black 1px;
+}
+a:hover{
+    color: purple;
+    background-color: orange;
+}
+a:active{
+    color: white;
+    background-color: navy;
+}
+a:visited{
+    color: gray;
+
+}
