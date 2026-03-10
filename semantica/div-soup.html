@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica</title>
+    <style>
+        header{
+            background-color: gainsboro;
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+        nav{
+            background-color: rgb(58, 102, 87);
+            width: 90%;
+            /*comando para centralizar div*/
+            margin: auto;
+        }
+        nav>div{
+            /*coloca todos os elementos em uma mesma linha*/
+            display: inline;
+        }
+        main{
+            background-color: azure;
+
+        }
+        article{
+            border: 1px solid black;
+        }
+        aside{
+            background-color: bisque;
+        }
+        footer{
+            background-color: cadetblue;
+        }
+        /* seletor de classe*/
+        .item{
+          color: lightgreen;
+        }
+        /*seletor de id*/
+        #topo{
+            color: blue;
+        }
+        span.destaque{
+            font-weight: bolder;
+        }
+        span.erro{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <header id="topo">
+        <div id="titulo-principal">Blog de Tecnologia do IFSP</div>
+        <nav id="menu-principal">
+            <div class="item">Home</div>
+            <div class="item">Projetos</div>
+            <div class="item">Contato</div>
+        </nav>
+    </header>
+    <main id="corpo-site">
+        <article id="noticia-destaque">
+            <h2 class="titulo-post">Lançamento do Novo Curso</h2>
+            <div class="texto">Conteúdo detalhado sobre o curso <span class="destaque">TADS</span> do <span class="destaque">IFSP</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam odio modi accusamus quam, omnis dolores voluptatem adipisci exercitationem, culpa repudiandae et molestiae aut repellat iste ea, labore architecto excepturi sapiente. </div>
+            <div class="autor">Escrito por: Professora <span class="erro">Bianca</span></div>
+        </article>
+        
+        <aside id="barra-lateral">
+            <div class="titulo-lateral">Links Úteis</div>
+            <div class="link">Manual do Aluno</div>
+        </aside>
+    </main>
+
+
+    <footer id="rodape">
+        <div class="info">2026 - IFSP Campinas</div>
+    </footer>
+</body>
+</html>

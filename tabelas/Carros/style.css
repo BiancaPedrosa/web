@@ -35,7 +35,7 @@ table {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px); /* Efeito de vidro */
     border-radius: 15px;
-    overflow: hidden;
+   /* overflow: hidden;*/
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -98,4 +98,8 @@ td:nth-child(4) {
 /* Ajuste fino para a última linha não ter borda */
 tbody tr:last-child td {
     border-bottom: none;
+}
+
+div{
+    overflow-x: auto;
 }
