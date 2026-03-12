@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        .campo input:focus, .campo textarea:focus, select:focus{
+	        
+            border-color: blue;
+        }
+        #btCadastrar:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+         <fieldset>
+
+            <legend>Dados pessoais</legend>
+            <div class="campo">
+                 <label for="nome">Nome:</label>
+                 <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="e-mail">e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div clas="campo">
+                <label for="idade">idade:</label>
+                <input type="number" id="idade" name="idade" min="0" max="120" step="2" required>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" id="sexf" name="sexo" value="feminino" checked>Feminino
+                <input type="radio" id="sexm" name="sexo" value="masculino">masculino
+            </div>
+        </fieldset>
+        <fieldset>
+            <LEGEND>Experiência profissional</LEGEND>
+            <label for="profissao">Profissão</label>
+            <SELECT name="profissao" id="profissao">
+                <option value="estudante">Estudante</option>
+                <option value="professor">Professor</option>
+                <option value="engenheiro">Engenheiro</option>
+                <option value="economista">Economista</option>
+                <option value="medico">Médico</option>
+            </SELECT>
+        </fieldset>
+        <fieldset>
+            <legend>Outras informções</legend>
+            <div class="campo">
+                 <label for="">Comentários</label>
+                <TEXTAREA rows="3" cols="50" name='observacoes' placeholder='digite aqui suas observações'></TEXTAREA>
+
+            </div>
+        </fieldset>
+        
+        <input id="btCadastrar" type="submit" value="Cadastrar">
+
+    </form>
+</body>
+</html>
