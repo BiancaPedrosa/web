@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- O PASSO ZERO: Sem isso, o responsivo não funciona no celular! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Design Responsivo</title>
+    <style>
+        /* 1. ESTILOS BASE (PENSANDO NO CELULAR PRIMEIRO) */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            
+            /* No celular, o card ocupa quase toda a largura */
+            width: 100%;
+            max-width: 350px; 
+            
+            /* Flexbox para empilhar conteúdo verticalmente no mobile */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-imagem {
+            width: 100%;
+            height: 200px;
+            background: #007bff; /* Representando uma imagem */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .card-conteudo {
+            padding: 20px;
+        }
+
+        /* 2. MEDIA QUERY (PENSANDO NO DESKTOP) */
+        /* "Quando a tela for maior que 768px, mude o comportamento" */
+        @media (min-width: 768px) {
+            .card {
+                max-width: 700px;
+                flex-direction: row; /* Alinha imagem e texto lado a lado */
+            }
+
+            .card-imagem {
+                width: 40%; /* A imagem ocupa 40% da largura do card */
+                height: auto;
+            }
+
+            .card-conteudo {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-imagem">
+            <span>[ IMAGEM ]</span>
+        </div>
+        <div class="card-conteudo">
+            <h2>Título do Produto</h2>
+            <p>Este card se adapta sozinho! No celular ele empilha o conteúdo, e no computador ele exibe em colunas.</p>
+            <button style="width: 100%; padding: 10px; cursor: pointer;">Comprar</button>
+        </div>
+    </div>
+
+</body>
+</html>
