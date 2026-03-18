@@ -6,7 +6,7 @@ Aqui você encontrará uma coleção de projetos didáticos focados no aprendiza
 
 **Professor:** Bianca Pedrosa  
 **Período:** 2026  
-**Última atualização:** 25 de fevereiro de 2026
+**Última atualização:** 18 de março de 2026
 
 ---
 
@@ -32,14 +32,52 @@ Projeto inicial focado em aprender os conceitos fundamentais de desenvolvimento 
 
 ---
 
-### 📊 [Carros](./tabelas/Carros)
+### 🌿 [Plantas](./listas/plantas)
+**Projeto de Estilização - Layout e Responsividade**
+
+Exercício que explora estilos CSS e layout simples com imagens.
+
+**Arquivos:**
+- `index.html` - Conteúdo sobre plantas
+- `estilo.css` - Estilos para layout e tipografia
+
+**Objetivo:** Praticar posicionamento de elementos e uso de CSS para organização visual.
+
+---
+
+### 🧾 [Formulários](./formularios)
+**Projetos de Formulários HTML + CSS**
+
+Contém exemplos de formulários com estilos e elaboração de campos.
+
+- **DevCon** (`formularios/DevCon`)
+  - `devcon.html` – Formulário de cadastro de evento
+  - `devcon.css` – Estilização do formulário
+
+- **Feedback** (`formularios/feedback`)
+  - `feedback.html` – Formulário de feedback
+  - `feedback.css` – Estilização do formulário
+
+---
+
+### 📺 [Streaming](./tabelas/streaming)
+**Projeto de Linkagem de Conteúdo**
+
+Exemplo simples de layout para exibidor de links de streaming.
+
+**Arquivos:**
+- `index.html`
+
+---
+
+### 🚗 [Carros](./tabelas/Carros)
 **Projeto de Manipulação de Dados - Tabelas HTML**
 
 Projeto focado em estruturação e apresentação de dados em tabelas.
 
 **Arquivos:**
 - `index.html` - Tabela de catálogo de veículos com dados estruturados
-- `estilo.css` - Estilos para formatação e responsividade da tabela
+- `style.css` - Estilos para formatação e responsividade da tabela
 
 **Conceitos aprendidos:**
 - Estrutura de tabelas HTML (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)
@@ -48,6 +86,45 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 - Responsividade em dados tabulares
 
 **Objetivo principal:** Trabalhar com apresentação eficaz de dados estruturados
+
+---
+
+### 🕒 [Horário](./tabelas/horario)
+**Exemplo de tabela simples para horários**
+
+- `horario.html`
+
+---
+
+### 🧑‍🤝‍🧑 [Pessoas](./tabelas/pessoas)
+**Exemplo de tabela simples para pessoas**
+
+- `pessoas.html`
+
+---
+
+### 📐 [Responsividade](./responsividade)
+**Exercícios de layout responsivo**
+
+- `demo.html` — Demonstração de comportamento responsivo com media queries.
+
+> ⚠️ A pasta `responsividade/tarefa` está ignorada no Git (não é enviada ao repositório).
+
+---
+
+### 🧩 [Semântica](./semantica)
+**Exemplos de HTML semântico**
+
+- `index.html` — Página com elementos estruturais
+- `div-soup.html` — Exemplo de ausência de semântica (uso de divs)
+
+---
+
+### 📁 [formulario_css](./formulario_css)
+**Exercícios de formulário com CSS**
+
+- `Cadastro.html` — Formulário de cadastro
+- `slides/` — Exemplos e slides com HTML/CSS
 
 ---
 
