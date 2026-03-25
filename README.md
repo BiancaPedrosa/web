@@ -6,7 +6,7 @@ Aqui você encontrará uma coleção de projetos didáticos focados no aprendiza
 
 **Professor:** Bianca Pedrosa  
 **Período:** 2026  
-**Última atualização:** 18 de março de 2026
+**Última atualização:** 25 de março de 2026
 
 ---
 
@@ -120,7 +120,27 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 
 ---
 
-### 📁 [formulario_css](./formulario_css)
+### ⚖️ [Peso Ideal](./javascript/peso)
+**Projeto de Interatividade - JavaScript**
+
+Calculadora de peso ideal com base na altura e sexo informados.
+
+**Arquivos:**
+- `peso.html` - Formulário de entrada de dados
+- `css/peso.css` - Estilização da calculadora
+- `js/peso.js` - Lógica de cálculo em JavaScript
+
+**Conceitos aprendidos:**
+- Manipulação do DOM com JavaScript
+- Eventos de formulário (`onclick`)
+- Funções e variáveis em JavaScript
+- Integração entre HTML, CSS e JS
+
+**Objetivo principal:** Introduzir a interatividade nas páginas web com JavaScript
+
+---
+
+### 📁 [formulario_css](./formularios/slides)
 **Exercícios de formulário com CSS**
 
 - `Cadastro.html` — Formulário de cadastro
@@ -132,6 +152,7 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 
 - **HTML5** - Markup semântico e estrutura de conteúdo
 - **CSS3** - Estilização moderna e layouts
+- **JavaScript** - Interatividade e manipulação do DOM
 
 **Ferramentas Recomendadas:**
 - Editores: VS Code, Sublime Text ou similar
@@ -175,10 +196,10 @@ Este repositório contém exercícios práticos e projetos do curso **Desenvolvi
 Os projetos foram organizados em ordem crescente de complexidade:
 1. **Bolo** → Fundações (HTML e CSS básico)
 2. **Carros** → Dados estruturados (Tabelas)
+3. **Peso Ideal** → Interatividade com JavaScript
 
 ### Próximas Etapas
-- JavaScript para interatividade
-- Layouts responsivos com CSS Media Queries
+- Layouts responsivos avançados com CSS Media Queries
 - Frameworks front-end (se aplicável)
 
 ## 📞 Suporte
