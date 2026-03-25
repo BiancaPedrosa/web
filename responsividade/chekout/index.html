@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- ESSENCIAL PARA SEO E RESPONSIVIDADE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Responsivo - DevCon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Finalizar Compra</h1>
+        
+        <form class="checkout-form">
+            <!-- Grupo: Identificação -->
+            <fieldset>
+                <legend>Identificação</legend>
+                <div class="form-group w-100">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group w-100">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+            </fieldset>
+
+            <!-- Grupo: Entrega -->
+            <fieldset class="entrega">
+                <legend>Entrega</legend>
+                <div class="form-group w-100">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Rua, número...">
+                </div>
+                <div class="form-group w-50">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade">
+                </div>
+                <div class="form-group w-50">
+                    <label for="estado">Estado</label>
+                    <select id="estado">
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Grupo: Pagamento -->
+            <fieldset>
+                <legend>Pagamento</legend>
+                <div class="radio-group">
+                    <input type="radio" id="cartao" name="pagamento" checked>
+                    <label for="cartao">Cartão de Crédito</label>
+                    
+                    <input type="radio" id="pix" name="pagamento">
+                    <label for="pix">Pix</label>
+                </div>
+            </fieldset>
+            <!-- Grupo: Segurança-->
+            <fieldset>
+                <legend>Segurança</legend>
+                <div class="form-group">
+                    <label for="cvv">CVV (Segurança)</label>
+                    <input type="password" id="cvv" max="999">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-submit">Confirmar Pedido</button>
+        </form>
+    </main>
+
+</body>
+</html>

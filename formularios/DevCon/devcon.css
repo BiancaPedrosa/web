@@ -1,0 +1,28 @@
+body { background-color: #121212; color: white; font-family: 'Segoe UI', sans-serif; }
+
+.event-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+input, textarea{
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
