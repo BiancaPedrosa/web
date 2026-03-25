@@ -1,0 +1,79 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box; /* Garante que padding não quebre as colunas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px; /*bordas arredondadas*/
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 { text-align: center; margin-bottom: 20px; color: #333; }
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex; /* Flexbox para organizar os campos internos */
+    flex-wrap: wrap; /**/
+    gap: 15px;
+}
+
+legend { font-weight: bold; padding: 0 10px; color: #ed145b; }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. MOBILE-FIRST (1 Coluna por padrão) */
+.w-100, .w-50 {
+    width: 100%;
+}
+
+label { margin-bottom: 5px; font-size: 0.9em; }
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* 2. TABLET (2 Colunas para campos específicos) */
+@media (min-width: 400px) {
+    .w-50 {
+        width: calc(50% - 8px); /* 8px é metade do gap de 15px */
+    }
+}
+
+/* 3. DESKTOP (3 Colunas - Exemplo no Endereço/Cidade/Estado) */
+@media (min-width: 600px) {
+    /* No Desktop, podemos fazer o Endereço ocupar mais espaço e os outros menos */
+    .entrega fieldset .form-group:nth-child(2) { width: 40%; } /* Endereço */
+    .entrega fieldset .form-group:nth-child(3) { width: 20%; } /* Cidade */
+    .entrega fieldset .form-group:nth-child(4) { width: calc(20% - 30px); } /* Estado */
+}

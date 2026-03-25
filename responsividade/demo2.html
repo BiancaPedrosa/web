@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Media Queries - IFSP</title>
+    <style>
+        /* 1. ESTILO PADRÃO (MOBILE FIRST) */
+        /* Esta cor aparece em celulares (telas pequenas) */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s; /* Suaviza a troca de cor */
+            background-color: #ffeaa7; /* Amarelo claro */
+        }
+
+        .caixa {
+            width: 80%;
+            padding: 50px;
+            text-align: center;
+            border: 5px solid #333;
+            background-color: #fab1a0; /* Rosa/Laranja */
+        }
+
+        .caixa::after {
+            content: "MODO: CELULAR (TELA PEQUENA)";
+            font-weight: bold;
+        }
+
+        /* 2. TABLET (Breakpoints: acima de 600px) */
+        @media (min-width: 600px) {
+            body {
+                background-color: #81ecec; /* Azul Piscina */
+            }
+            .caixa {
+                background-color: #00cec9; /* Verde Água */
+            }
+            .caixa::after {
+                content: "MODO: TABLET (MÉDIA)";
+            }
+        }
+
+        /* 3. DESKTOP (Breakpoints: acima de 1024px) */
+        @media (min-width: 1024px) {
+            body {
+                background-color: #a29bfe; /* Roxo Claro */
+            }
+            .caixa {
+                background-color: #6c5ce7; /* Roxo Intenso */
+                color: white;
+            }
+            .caixa::after {
+                content: "MODO: DESKTOP (GRANDE)";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa">
+        <h1>Teste de Responsividade</h1>
+        <p>Redimensione a largura do seu navegador para ver a mágica!</p>
+        <hr>
+    </div>
+
+</body>
+</html>
