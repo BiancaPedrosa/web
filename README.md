@@ -2,11 +2,11 @@
 
 Repositório de projetos práticos do curso **Desenvolvimento Web 1** do Instituto Federal de São Paulo (IFSP).
 
-Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundações web com HTML5 e CSS3.
+Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundamentos web com HTML5 e CSS3.
 
 **Professor:** Bianca Pedrosa  
 **Período:** 2026  
-**Última atualização:** 25 de março de 2026
+**Última atualização:** 31 de março de 2026
 
 ---
 
@@ -50,7 +50,7 @@ Exercício que explora estilos CSS e layout simples com imagens.
 
 Contém exemplos de formulários com estilos e elaboração de campos.
 
-- **DevCon** (`formularios/DevCon`)
+- **DevCon** (`formularios/devcon`)
   - `devcon.html` – Formulário de cadastro de evento
   - `devcon.css` – Estilização do formulário
 
@@ -106,9 +106,9 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 ### 📐 [Responsividade](./responsividade)
 **Exercícios de layout responsivo**
 
-- `demo.html` — Demonstração de comportamento responsivo com media queries.
+- `demo.html` — Demonstração de comportamento responsivo com media queries
 
-> ⚠️ A pasta `responsividade/tarefa` está ignorada no Git (não é enviada ao repositório).
+> ⚠️ A pasta `responsividade/tarefa` pode estar ignorada no Git, dependendo do seu `.gitignore` local.
 
 ---
 
@@ -140,41 +140,42 @@ Calculadora de peso ideal com base na altura e sexo informados.
 
 ---
 
-### 📁 [formulario_css](./formularios/slides)
+### 📁 [Formulários (Slides)](./formularios/slides)
 **Exercícios de formulário com CSS**
 
 - `Cadastro.html` — Formulário de cadastro
-- `slides/` — Exemplos e slides com HTML/CSS
+- `css/style.css` — Estilos dos exemplos
+- `html/Formcss.html` — Exemplo de formulário em HTML/CSS
 
 ---
 
 ## 🎯 Tecnologias Utilizadas
 
-- **HTML5** - Markup semântico e estrutura de conteúdo
+- **HTML5** - Marcação semântica e estrutura de conteúdo
 - **CSS3** - Estilização moderna e layouts
 - **JavaScript** - Interatividade e manipulação do DOM
 
 **Ferramentas Recomendadas:**
-- Editores: VS Code, Sublime Text ou similar
+- Editores: VS Code, Sublime Text ou similares
 - Navegadores: Chrome, Firefox, Safari (versões atualizadas)
 - Git para controle de versão
 
 ---
 
-## � Como Usar
+## 🚀 Como Usar
 
-### Clonar o Repositório
+### Clonar o repositório
 ```bash
 git clone https://github.com/BiancaPedrosa/web.git
 cd web
 ```
 
-### Abrir um Projeto
+### Abrir um projeto
 1. Navegue até a pasta do projeto desejado (ex: `listas/Bolo`)
 2. Abra o arquivo `index.html` diretamente no navegador
 3. Ou use um servidor local para melhor experiência (recomendado)
 
-### Com Servidor Local (Opcional)
+### Com servidor local (opcional)
 Se preferir usar um servidor HTTP:
 ```bash
 # Usando Python 3
@@ -183,7 +184,7 @@ python -m http.server 8000
 # Usando Node.js (com http-server instalado)
 npx http-server
 ```
-Após iniciar, acesse `http://localhost:8000` no navegador
+Após iniciar, acesse `http://localhost:8000` no navegador.
 
 ---
 
@@ -200,7 +201,7 @@ Os projetos foram organizados em ordem crescente de complexidade:
 
 ### Próximas Etapas
 - Layouts responsivos avançados com CSS Media Queries
-- Frameworks front-end (se aplicável)
+- Frameworks front-end (quando aplicável)
 
 ## 📞 Suporte
 
