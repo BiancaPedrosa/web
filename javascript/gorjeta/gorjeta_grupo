@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Gorjeta</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .card { max-width: 350px; border: 2px solid #27ae60; padding: 20px; border-radius: 10px; }
+        input, select { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        .res-destaque { font-size: 1.2em; color: #27ae60; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h3>Split & Tip</h3>
+    <form id="formGorjeta" oninput="atualizar()">
+        <label>Valor da Conta (R$):</label>
+        <input type="number" name="totalConta" step="0.01" placeholder="0.00">
+
+        <label>Qualidade do Serviço:</label>
+        <select name="servico">
+            <option value="0.20">Excelente (20%)</option>
+            <option value="0.15">Bom (15%)</option>
+            <option value="0.10">Regular (10%)</option>
+        </select>
+
+        <label>Dividir por quantas pessoas?</label>
+        <input type="number" name="qtdPessoas" value="1" min="1">
+    </form>
+
+    <div id="resultadoGorjeta">
+        <p>Valor por Pessoa: <br><span class="res-destaque" id="valorFinal">R$ 0,00</span></p>
+    </div>
+</div>
+
+<script>
+function atualizar() {
+    const form = document.getElementById('formGorjeta');
+    
+    // Captura via elements
+    const conta = Number(form.elements['totalConta'].value);
+    const gorjetaPercent = Number(form.elements['servico'].value);
+    const pessoas = Number(form.elements['qtdPessoas'].value);
+
+    if (conta > 0 && pessoas >= 1) {
+        const totalComGorjeta = conta + (conta * gorjetaPercent);
+        const porPessoa = totalComGorjeta / pessoas;
+        
+        document.getElementById('valorFinal').innerText = "R$ " + porPessoa.toFixed(2);
+    } else {
+        document.getElementById('valorFinal').innerText = "R$ 0,00";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Buffet</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.5; }
+        .container { max-width: 400px; border: 1px solid #ccc; padding: 20px; border-radius: 10px; }
+        .resultado { margin-top: 20px; padding: 10px; background: #e8f4fd; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Orçamento Buffet</h2>
+    <form id="formBuffet">
+        <label>Qtd. Convidados:</label><br>
+        <input type="number" name="qtd" value="0" min="0" style="width: 100%; margin-bottom: 10px;"><br>
+
+        <label><strong>Adicionais:</strong></label><br>
+        <input type="checkbox" name="adicionais" value="500"> Decoração (R$ 500)<br>
+        <input type="checkbox" name="adicionais" value="800"> DJ (R$ 800)<br>
+        <input type="checkbox" name="adicionais" value="30"> Open Bar (R$ 30 por pessoa)<br><br>
+
+        <button type="button" onclick="calcular()">Gerar Orçamento</button>
+    </form>
+
+    <div id="saidaBuffet" class="resultado">Total: R$ 0,00</div>
+</div>
+
+<script>
+function calcular() {
+    const form = document.getElementById('formBuffet');
+    const convidados = Number(form.elements['qtd'].value);
+    const listaAdicionais = form.elements['adicionais']; // NodeList
+    
+    let total = convidados * 80; // R$ 80 por pessoa base
+
+    // Somando os adicionais marcados
+    // Como Open Bar é o terceiro item (índice 2) e depende de pessoas:
+    for (let i = 0; i < listaAdicionais.length; i++) {
+        if (listaAdicionais[i].checked) {
+            if (i === 2) { // Open Bar
+                total += (Number(listaAdicionais[i].value) * convidados);
+            } else {
+                total += Number(listaAdicionais[i].value);
+            }
+        }
+    }
+
+    // Regra dos 15% para eventos pequenos
+    if (convidados > 0 && convidados < 50) {
+        total *= 1.15;
+    }
+
+    document.getElementById('saidaBuffet').innerText = "Total: R$ " + total.toFixed(2);
+}
+</script>
+
+</body>
+</html>

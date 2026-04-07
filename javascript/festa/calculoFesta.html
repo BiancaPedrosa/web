@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Festa</title>
+</head>
+<style>
+    
+body {
+    font-family:'Trebuchet MS', sans-serif;
+    background-color:deepskyblue;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    height: 55vh;
+}
+form {
+    background-color:aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 300px;
+    margin: 30px;
+}
+h1, h2, h3 {
+    color: #0056b3;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(4, 61, 168);
+    color: rgb(243, 234, 234);
+    padding: 10px;  
+    border: 15;
+    border-style: solid;
+    border-color:darkblue;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 95%;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #1e72b8;
+}
+</style>
+<body>
+    <form name="orcamento">
+        <h2>Orçamento Festa</h2>
+        <label for="convidados">Nº Convidados</label>
+        <input type="number" name="convidados" id="convidados">
+        
+        <h3>Tipo de buffet</h3>
+        <label for="basico">
+            <input type="radio" name="buffet" value="50" id="basico"> Buffet básico (R$50 p/ pessoa)
+        </label><br>
+        <label for="premium">
+            <input type="radio" name="buffet" value="80" id="premium"> Buffet premium (R$80 p/ pessoa)
+        </label><br>
+        
+        <h3>Adicionais</h3>
+        <input type="checkbox" name="adicionais" id="decoracao" value="200">
+        <label for="decoracao">Decoração (R$200)</label><br>
+        
+        <input type="checkbox" name="adicionais" id="dj" value="500">
+        <label for="dj">DJ (R$500)</label><br>
+        
+        <input type="checkbox" name="adicionais" id="fotografo" value="800">
+        <label for="fotografo">Fotógrafo (R$800)</label><br>
+         <br>
+        <button type="button" onclick="orcar()">Calcular Orçamento</button>
+        <br>
+        <br>
+         Valor Total: 
+        <input type="text" name="resultado" id="resultado" readonly>
+
+        <br>
+        <br>
+    </form>
+
+    <script>
+        function orcar() {
+            let convidados = parseInt(orcamento.convidados.value);
+            let buffet = 0;
+            let adicionais = 0;
+
+            //Escolher tipo de buffet
+            if (orcamento.basico.checked) {
+                buffet = 50;
+            } else if (orcamento.premium.checked) {
+                buffet = 80;
+            }
+
+            //Adicionais selecionados
+            if (orcamento.decoracao.checked) {
+                adicionais += orcamento.decoracao.value;
+            }
+            if (orcamento.dj.checked) {
+                adicionais += orcamento.dj.value;
+            }
+            if (orcamento.fotografo.checked) {
+                adicionais += orcamento.fotografo.value;
+            }
+
+            //Valor total
+            let resultado = (convidados * buffet) + adicionais;
+
+            //Resultado
+            orcamento.resultado.value = "R$ " + resultado;
+        }
+    </script>
+</body>
+</html>
