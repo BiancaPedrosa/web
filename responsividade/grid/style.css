@@ -1,0 +1,34 @@
+/* 1. O Container: define a malha de 3 colunas */
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  grid-auto-rows: 150px;                 /* Altura padrão das linhas */
+  gap: 15px;                             /* Espaço entre os cards */
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 2. O Card Destaque: ocupa 2 colunas e 2 linhas */
+.destaque {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #6c63ff; /* Cor de exemplo */
+}
+
+/* 3. O Card Largo: ocupa 2 colunas na horizontal */
+.largo {
+  grid-column: span 2;
+  background-color: #3f3d56;
+}
+
+/* Estilo geral para todos os cards */
+.card {
+  background-color: #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
