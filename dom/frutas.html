@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tabela DOM</title>
+     <style>
+          table, tr, td{
+               border: 1px solid black;
+          }
+     </style>
+</head>
+<body>
+     
+
+     <script>
+          let frutas=[{nome:"maçã", preco: 5},{nome:"banana", preco:12},{nome:"uva", preco:20}]
+          let tabela = document.createElement("table");
+          let cabecalho= tabela.insertRow();
+          let celula1 = cabecalho.insertCell(0);
+          let celula2 =cabecalho.insertCell(1);
+          celula1.innerHTML="Fruta";
+          celula2.innerHTML="Preço"
+
+
+          for(i=0; i<frutas.length; i++){
+               let linha = tabela.insertRow();
+               celula1 = linha.insertCell(0);
+               celula2 = linha.insertCell(1);
+               celula1.innerHTML=frutas[i].nome;
+               celula2.innerHTML= " R$ "+ frutas[i].preco;
+          }
+          document.body.append(tabela);
+     </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculadora dom historico</title>
+</head>
+<body>
+     Calculadora: <input type="text" id="numero" value="2*2+1">
+     <input type=button value="Calcular" onClick="calcular()"><br>
+     Histórico de Resultados
+     <div id="resultado">
+     </div>
+<script>
+     function calcular() {
+     var entrada= document.getElementById('numero').value;
+     var resultado= eval(entrada); //calculo
+     // DOM
+     novop=document.createElement("p");                       //<p></p>
+     novop.textContent=(entrada+"="+resultado);               //<p>2*2+1</p>
+     document.getElementById("resultado").appendChild(novop);  //add no doc
+     
+     }
+</script>
+</body>
+</html>
