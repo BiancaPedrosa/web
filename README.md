@@ -2,26 +2,29 @@
 
 Repositório de projetos práticos do curso **Desenvolvimento Web 1** do Instituto Federal de São Paulo (IFSP).
 
-Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundamentos web com HTML5 e CSS3.
+Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundamentos web com HTML5, CSS3 e JavaScript.
 
 **Professor:** Bianca Pedrosa  
 **Período:** 2026  
-**Última atualização:** 31 de março de 2026
+**Última atualização:** 11 de maio de 2026
 
 ---
 
 ## 📁 Estrutura de Projetos
 
 ### 🍰 [Bolo](./listas/Bolo)
+
 **Projeto Introdutório - HTML e CSS Básico**
 
 Projeto inicial focado em aprender os conceitos fundamentais de desenvolvimento web.
 
 **Arquivos:**
+
 - `index.html` - Estrutura HTML básica com elementos semânticos
 - `style.css` - Estilização CSS pura, sem frameworks
 
 **Conceitos aprendidos:**
+
 - Tags HTML semânticas
 - Seletores CSS básicos
 - Box model
