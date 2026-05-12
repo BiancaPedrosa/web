@@ -230,118 +230,6 @@ python3 -m http.server 8000
 
 Este repositório é para fins educacionais.
 
-Contém exemplos de formulários com estilos e elaboração de campos.
-
-- **DevCon** (`formularios/devcon`)
-  - `devcon.html` – Formulário de cadastro de evento
-  - `devcon.css` – Estilização do formulário
-
-- **Feedback** (`formularios/feedback`)
-  - `feedback.html` – Formulário de feedback
-  - `feedback.css` – Estilização do formulário
-
----
-
-### 📺 [Streaming](./tabelas/streaming)
-
-**Projeto de Linkagem de Conteúdo**
-
-Exemplo simples de layout para exibidor de links de streaming.
-
-**Arquivos:**
-
-- `index.html`
-
----
-
-### 🚗 [Carros](./tabelas/Carros)
-
-**Projeto de Manipulação de Dados - Tabelas HTML**
-
-Projeto focado em estruturação e apresentação de dados em tabelas.
-
-**Arquivos:**
-
-- `index.html` - Tabela de catálogo de veículos com dados estruturados
-- `style.css` - Estilos para formatação e responsividade da tabela
-
-**Conceitos aprendidos:**
-
-- Estrutura de tabelas HTML (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)
-- Atributos de tabelas e células
-- Estilização de tabelas
-- Responsividade em dados tabulares
-
-**Objetivo principal:** Trabalhar com apresentação eficaz de dados estruturados
-
----
-
-### 🕒 [Horário](./tabelas/horario)
-
-**Exemplo de tabela simples para horários**
-
-- `horario.html`
-
----
-
-### 🧑‍🤝‍🧑 [Pessoas](./tabelas/pessoas)
-
-**Exemplo de tabela simples para pessoas**
-
-- `pessoas.html`
-
----
-
-### 📐 [Responsividade](./responsividade)
-
-**Exercícios de layout responsivo**
-
-- `demo.html` — Demonstração de comportamento responsivo com media queries
-
----
-
-### 🧩 [Semântica](./semantica)
-
-**Exemplos de HTML semântico**
-
-- `index.html` — Página com elementos estruturais
-- `div-soup.html` — Exemplo de ausência de semântica (uso de divs)
-
----
-
-### ⚖️ [Peso Ideal](./javascript/peso)
-
-**Projeto de Interatividade - JavaScript**
-
-Calculadora de peso ideal com base na altura e sexo informados.
-
-**Arquivos:**
-
-- `peso.html` - Formulário de entrada de dados
-- `css/peso.css` - Estilização da calculadora
-- `js/peso.js` - Lógica de cálculo em JavaScript
-
-**Conceitos aprendidos:**
-
-- Manipulação do DOM com JavaScript
-- Eventos de formulário (`onclick`)
-- Funções e variáveis em JavaScript
-- Integração entre HTML, CSS e JS
-
-**Objetivo principal:** Introduzir a interatividade nas páginas web com JavaScript
-
----
-
-### 📁 [Formulários (Slides)](./formularios/slides)
-
-**Exercícios de formulário com CSS**
-
-- `Cadastro.html` — Formulário de cadastro
-- `css/style.css` — Estilos dos exemplos
-- `html/Formcss.html` — Exemplo de formulário em HTML/CSS
-
----
-
 ## 🎯 Tecnologias Utilizadas
 
 - **HTML5** - Marcação semântica e estrutura de conteúdo
@@ -365,20 +253,6 @@ cd web
 2. Abra o arquivo `index.html` diretamente no navegador
 3. Ou use um servidor local para melhor experiência (recomendado)
 
-### Com servidor local (opcional)
-
-Se preferir usar um servidor HTTP:
-
-```bash
-# Usando Python 3
-python -m http.server 8000
-
-# Usando Node.js (com http-server instalado)
-npx http-server
-```
-
-Após iniciar, acesse `http://localhost:8000` no navegador.
-
 ---
 
 ## 📝 Informações Adicionais
@@ -386,14 +260,6 @@ Após iniciar, acesse `http://localhost:8000` no navegador.
 ### Sobre este Repositório
 
 Este repositório contém exercícios práticos e projetos do curso **Desenvolvimento Web 1** do IFSP. Cada projeto foi desenvolvido para ensinar conceitos específicos de desenvolvimento web front-end.
-
-### Progressão de Aprendizado
-
-Os projetos foram organizados em ordem crescente de complexidade:
-
-1. **Bolo** → Fundações (HTML e CSS básico)
-2. **Carros** → Dados estruturados (Tabelas)
-3. **Peso Ideal** → Interatividade com JavaScript
 
 ## 📞 Suporte
 
