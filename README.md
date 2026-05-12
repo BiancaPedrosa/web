@@ -207,18 +207,6 @@ Projeto de nutrição com DOM.
 
 **Conceitos:** JSON.parse, JSON.stringify, integração com forms.
 
----
-
-## 🚀 Como Executar
-
-Para visualizar os projetos, abra os arquivos `.html` em um navegador web. Alguns projetos JavaScript requerem um servidor local para funcionar corretamente (devido a módulos ES6):
-
-```bash
-# No diretório do projeto
-python3 -m http.server 8000
-# Acesse http://localhost:8000
-```
-
 ## 📚 Conceitos Aprendidos
 
 - **HTML5:** Semântica, formulários, tabelas, acessibilidade
