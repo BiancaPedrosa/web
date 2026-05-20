@@ -121,6 +121,38 @@ Uso de media queries para responsividade.
 
 ---
 
+### 🏗️ [Bootstrap](./bootstrap)
+
+**Projetos com componentes e estilo via Bootstrap**
+
+A pasta `bootstrap` contém exemplos que utilizam o framework Bootstrap para criar interfaces com layouts prontos, barras de navegação e sliders.
+
+**Arquivos de destaque:**
+
+- `navbar.html` - Exemplo de barra de navegação responsiva
+- `slide12.html`, `slide13.html` - Exemplos de carrossel/slider
+- `container.html` - Exemplo de uso de container e grid do Bootstrap
+
+**Conceitos:** Framework CSS, classes utilitárias, componentes prontos, responsividade rápida.
+
+---
+
+### 💱 [Conversor de Moedas](./conversorMoedas)
+
+**Aplicação de conversão com JavaScript**
+
+O projeto `conversorMoedas` é um exemplo de como criar uma calculadora de moedas usando JavaScript para manipular valores e atualizar a interface.
+
+**Arquivos de destaque:**
+
+- `index.html` - Interface do conversor
+- `script.js` - Lógica de cálculo e manipulação dos valores
+- `style.css` - Estilos da página
+
+**Conceitos:** DOM, eventos, manipulação de valores numéricos, formatação de moeda.
+
+---
+
 ### 🧠 [JavaScript](./javascript)
 
 **Projetos com JavaScript**
