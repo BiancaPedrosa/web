@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador PokeAPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>PokéBusca</h1>
+        <p>Digite o nome de um Pokémon em inglês para ver seus dados (Ex:ditto, mew, charizard, bulbasaur, pikachu).</p>
+
+        <section class="busca-box">
+            <input type="text" id="input-busca" placeholder="Nome do Pokémon...">
+            <button id="btn-buscar">Buscar</button>
+        </section>
+
+        <section id="container-resultado">
+            <!-- Os cards injetados via JS entrarão aqui -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

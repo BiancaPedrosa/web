@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f6f8fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 { color: #ef5350; margin-bottom: 5px; font-size: 2.5rem; }
+p { color: #666; margin-bottom: 20px; font-size: 0.95rem; }
+
+.busca-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input:focus { border-color: #ef5350; outline: none; }
+
+button {
+    padding: 12px 24px;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover { background-color: #e53935; }
+button:disabled { background-color: #ccc; cursor: not-allowed; }
+
+.poke-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.poke-card img {
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.poke-card h2 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.poke-id { color: #999; font-weight: bold; margin-bottom: 15px; }
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.badge {
+    padding: 6px 16px;
+    background-color: #607d8b;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.msg-info { font-weight: bold; margin-top: 20px; color: #666; }
+.erro { color: #ef5350; }
