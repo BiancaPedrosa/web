@@ -1,0 +1,94 @@
+<style>
+    /* Estilização seguindo as instruções do exercício */
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Responsividade*/
+        margin: 20px 0;
+    }
+
+    .streaming-table {
+        width: 100%;
+        border-collapse: collapse; /* Borda colapsada */
+        font-family: Arial, sans-serif;
+    }
+
+    .streaming-table th, .streaming-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center; /* Alinhamento centralizado */
+    }
+
+    .streaming-table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    /* Efeito Zebra  */
+    .streaming-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .streaming-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Ajuste para os ícones */
+    .plan-icon {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+</style>
+
+<div class="table-container">
+    <table class="streaming-table">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Plano</th>
+                <th>Resolução</th>
+                <th>Telas</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Individual</td>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/633/633600.png" alt="Ícone Tela" class="plan-icon"> 
+                    Básico
+                </td>
+                <td>720p</td>
+                <td>1</td>
+                <td>R$ 18,90</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Família</td> 
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2258/2258555.png" alt="Ícone HD" class="plan-icon"> 
+                    Padrão
+                </td>
+                <td>1080p</td>
+                <td>2</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5219/5219142.png" alt="Ícone 4K" class="plan-icon"> 
+                    Premium
+                </td>
+                <td>4K+ HDR</td>
+                <td>4</td>
+                <td>R$ 55,90</td>
+            </tr>
+            <tr>
+                <td>Corporativo</td>
+                <td>Eventos</td>
+                <td>Personalizada</td>
+                <td>Ilimitado</td>
+                <td>Sob consulta</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

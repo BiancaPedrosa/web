@@ -1,0 +1,81 @@
+/* Reset e Tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Importante para o cálculo de largura com padding */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header e Nav: Elementos de bloco ocupando 100% da largura */
+header {
+    background-color: #004a8d; /* Azul IFSP */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline; /* Transforma itens da lista em linha para o menu */
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Container Principal para limitar a largura no desktop */
+main {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* "Clearfix" para conter os elementos com float */
+}
+
+/* Section: Alinhada à esquerda (70% da largura) */
+section#corpo-site {
+    float: left;
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Aside: Painel lateral alinhado à direita (25% da largura) */
+aside {
+    float: right;
+    width: 25%;
+    background: #e4e4e4;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Footer: Precisa "limpar" os floats para ficar embaixo de tudo */
+footer {
+    clear: both; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Exemplo de Span: Elemento inline para detalhes */
+.autor-nome {
+    color: red; /* Conforme exemplo do slide 16 */
+    font-weight: bold;
+}
