@@ -1,53 +1,42 @@
-# Web 1 - IFSP
+# Web Estático 26 - IFSP
 
-Repositório de projetos práticos do curso **Desenvolvimento Web 1** do Instituto Federal de São Paulo (IFSP).
+Repositório de projetos práticos do curso **Web Estático** (ensino técnico) do Instituto Federal de São Paulo (IFSP), turma 2026.
 
-Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundações web com HTML5 e CSS3.
+Aqui você encontrará uma coleção de projetos didáticos focados no aprendizado de fundações web com HTML5, CSS3 e JavaScript.
 
-**Professor:** Bianca Pedrosa  
-**Período:** 2026  
-**Última atualização:** 25 de fevereiro de 2026
+**Professor:** Bianca Pedrosa
+**Período:** 2026
 
 ---
 
 ## 📁 Estrutura de Projetos
 
-### 🍰 [Bolo](./listas/Bolo)
-**Projeto Introdutório - HTML e CSS Básico**
+### 📊 [Tabelas](./tabelas)
+Estruturação e apresentação de dados em tabelas HTML (`Carros`, `streaming`).
 
-Projeto inicial focado em aprender os conceitos fundamentais de desenvolvimento web.
+### 🏷️ [Semântica](./semantica)
+Uso de tags HTML semânticas e organização de conteúdo (`demo`, `div-soup`, `noticias`, `plantas`).
 
-**Arquivos:**
-- `index.html` - Estrutura HTML básica com elementos semânticos
-- `style.css` - Estilização CSS pura, sem frameworks
+### 📝 [Formulários](./formularios)
+Construção e validação de formulários HTML (`buffet`, `check`, `gorjeta`).
 
-**Conceitos aprendidos:**
-- Tags HTML semânticas
-- Seletores CSS básicos
-- Box model
-- Tipografia
-- Cores e fundos
+### 🎉 [Festa Junina](./FestaJunina)
+Site temático com calendário de eventos e simpatias.
 
-**Objetivo principal:** Compreender a separação entre conteúdo (HTML) e apresentação (CSS)
+### 🐰 [Páscoa](./pascoa)
+Site temático com cardápio e página de serviços.
 
----
+### 🍰 [Receitas](./receitas)
+Página de apresentação de receita culinária.
 
-### 📊 [Carros](./tabelas/Carros)
-**Projeto de Manipulação de Dados - Tabelas HTML**
+### ⚖️ [Peso](./peso)
+Calculadora de peso ideal com JavaScript.
 
-Projeto focado em estruturação e apresentação de dados em tabelas.
+### 🎲 [Sorteador](./sorteador)
+Ferramenta de sorteio com JavaScript.
 
-**Arquivos:**
-- `index.html` - Tabela de catálogo de veículos com dados estruturados
-- `estilo.css` - Estilos para formatação e responsividade da tabela
-
-**Conceitos aprendidos:**
-- Estrutura de tabelas HTML (`<table>`, `<thead>`, `<tbody>`, `<tfoot>`)
-- Atributos de tabelas e células
-- Estilização de tabelas
-- Responsividade em dados tabulares
-
-**Objetivo principal:** Trabalhar com apresentação eficaz de dados estruturados
+### ✅ [Cadastrador de Tarefas](./cadastrador-tarefas)
+Aplicação de cadastro de tarefas com JavaScript.
 
 ---
 
@@ -55,6 +44,7 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 
 - **HTML5** - Markup semântico e estrutura de conteúdo
 - **CSS3** - Estilização moderna e layouts
+- **JavaScript** - Interatividade nos exercícios mais avançados
 
 **Ferramentas Recomendadas:**
 - Editores: VS Code, Sublime Text ou similar
@@ -63,21 +53,20 @@ Projeto focado em estruturação e apresentação de dados em tabelas.
 
 ---
 
-## � Como Usar
+## 🚀 Como Usar
 
 ### Clonar o Repositório
 ```bash
-git clone https://github.com/BiancaPedrosa/web.git
-cd web
+git clone https://github.com/BiancaPedrosa/webestatico26.git
+cd webestatico26
 ```
 
 ### Abrir um Projeto
-1. Navegue até a pasta do projeto desejado (ex: `listas/Bolo`)
+1. Navegue até a pasta do projeto desejado (ex: `pascoa`)
 2. Abra o arquivo `index.html` diretamente no navegador
 3. Ou use um servidor local para melhor experiência (recomendado)
 
 ### Com Servidor Local (Opcional)
-Se preferir usar um servidor HTTP:
 ```bash
 # Usando Python 3
 python -m http.server 8000
@@ -92,17 +81,7 @@ Após iniciar, acesse `http://localhost:8000` no navegador
 ## 📝 Informações Adicionais
 
 ### Sobre este Repositório
-Este repositório contém exercícios práticos e projetos do curso **Desenvolvimento Web 1** do IFSP. Cada projeto foi desenvolvido para ensinar conceitos específicos de desenvolvimento web front-end.
-
-### Progressão de Aprendizado
-Os projetos foram organizados em ordem crescente de complexidade:
-1. **Bolo** → Fundações (HTML e CSS básico)
-2. **Carros** → Dados estruturados (Tabelas)
-
-### Próximas Etapas
-- JavaScript para interatividade
-- Layouts responsivos com CSS Media Queries
-- Frameworks front-end (se aplicável)
+Este repositório contém exercícios práticos e projetos do curso **Web Estático** (ensino técnico) do IFSP. Cada projeto foi desenvolvido para ensinar conceitos específicos de desenvolvimento web front-end. Alguns exercícios são reaproveitados de turmas anteriores.
 
 ## 📞 Suporte
 

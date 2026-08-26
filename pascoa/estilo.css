@@ -1,0 +1,44 @@
+/* Centralizar e colorir títulos */
+h1, h2 {
+    text-align: center;
+    color: #5d4037; /* Marrom Chocolate */
+}
+
+/* Cores de fundo diferentes para o corpo */
+body {
+    background-color: #fffaf0; /* Bege claro */
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 80%;
+    margin: 0 auto; /* Centraliza a tabela na página */
+    border: 2px solid #5d4037;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #8d6e63;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d7ccc8;
+}
+
+/* Barra de Navegação simples */
+nav {
+    text-align: center;
+    background-color: #5d4037;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrador de Tarefas</title>
+
+  <!-- Fonte do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container">
+      <h1>📋 Cadastrador de Tarefas</h1>
+      <p>Anote suas tarefas do dia de forma simples e organizada.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===================== FORMULÁRIO ===================== -->
+    <section class="secao-formulario">
+      <h2>Cadastrar nova tarefa</h2>
+
+      <form id="formTarefa" novalidate>
+
+        <div class="campo">
+          <label for="inputTitulo">Título <span class="obrigatorio">*</span></label>
+          <input
+            type="text"
+            id="inputTitulo"
+            name="inputTitulo"
+            maxlength="80"
+            placeholder="Ex: Finalizar relatório de Física"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="inputDescricao">Descrição (opcional)</label>
+          <textarea
+            id="inputDescricao"
+            name="inputDescricao"
+            maxlength="500"
+            rows="3"
+            placeholder="Detalhes da tarefa..."
+          ></textarea>
+        </div>
+
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="inputData">Data de vencimento <span class="obrigatorio">*</span></label>
+            <input
+              type="date"
+              id="inputData"
+              name="inputData"
+            >
+          </div>
+
+          <div class="campo">
+            <label for="selectPrioridade">Prioridade <span class="obrigatorio">*</span></label>
+            <select id="selectPrioridade" name="selectPrioridade">
+              <option value="">Selecione...</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="inputHoras">Estimativa de horas (opcional)</label>
+            <input
+              type="number"
+              id="inputHoras"
+              name="inputHoras"
+              min="0.5"
+              step="0.5"
+              placeholder="Ex: 2.5"
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primario">Cadastrar Tarefa</button>
+
+        <!-- Mensagem de validação (erro ou sucesso) -->
+        <div id="mensagemForm" role="alert" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- ===================== LISTA DE TAREFAS ===================== -->
+    <section class="secao-lista">
+      <h2>Tarefas cadastradas</h2>
+      <div id="listaTarefas">
+        <p class="lista-vazia">Nenhuma tarefa cadastrada ainda.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <button id="btnTema" type="button">🌙 Alternar Tema Claro/Escuro</button>
+      <p class="creditos">Desenvolvimento WEB Estático — Projeto 2º Trimestre</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

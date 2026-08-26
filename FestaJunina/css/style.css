@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url('../img/fundojunino.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    color: black;
+}
+
+table th {
+    background-color: #F39C12;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    background-color: #F8C471;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.simpatia{
+	padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 130px;
+}
+
