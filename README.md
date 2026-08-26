@@ -38,6 +38,9 @@ Ferramenta de sorteio com JavaScript.
 ### ✅ [Cadastrador de Tarefas](./cadastrador-tarefas)
 Aplicação de cadastro de tarefas com JavaScript.
 
+### 🍕 [Pizzaria](./pizzaria)
+Site com JavaScript para pedidos de pizzaria.
+
 ---
 
 ## 🎯 Tecnologias Utilizadas
